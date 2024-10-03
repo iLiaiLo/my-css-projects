@@ -1,0 +1,57 @@
+
+body{
+    margin:0;
+    padding:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    background-color:black;
+}
+
+button{
+    width:10rem;
+    height:4rem;
+    display:flex;
+    color:white;
+    overflow:hidden;
+    font-family: "Ms Madi", cursive;
+    font-weight: 400;
+    font-style: normal;
+    position:relative;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    cursor:pointer;
+    border-radius:15px;
+    background:transparent;
+    transform-origin:left;
+    border:1px solid white;
+    transition:1s;
+}
+button::after{
+    content:"";
+    position:absolute;
+    left:0;
+    width:0rem;
+    height:4rem;
+    z-index:-1;
+    background:linear-gradient(45deg,#5D2DA2,#1C9DD3);
+    box-shadow:0 0 20px purple;
+    transition:1s;
+    transform:scaleX(1);
+    transform-origin:left;
+}
+button:hover{
+    box-shadow:0 0 25px #8F31D3;;
+    letter-spacing:2px;
+    border:1px solid #8F31D3;
+    color:black;
+}
+button:hover::after{
+    width:10rem;
+}
+
+
+
+
